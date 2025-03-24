@@ -1,0 +1,58 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
+
+# 바이트 컴파일 / 최적화 / DLL 파일
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 환경 및 가상 환경
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+.venv
+pythonenv*
+
+# 배포 / 패키징
+dist/
+build/
+*.egg-info/
+*.egg
+
+# 유닛 테스트 / 커버리지 리포트
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# IDE 관련 파일
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-workspace
+
+# 프로젝트 특화 파일
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 기타 시스템 파일
+Thumbs.db
