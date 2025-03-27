@@ -21,5 +21,24 @@ c.convert_gif()
 패키지 배포 순서(PyPI)
 
 1. https://pypi.org/ 가입
+2. 프로젝트 구조 확인
+3. __init__.py 작성
+4. 프로젝트 Root 필수 파일 작성
+    - README.md
+    - setup.py
+    - setup.cfg(optional)
+    - LICENSE
+    - MANIFEST.in
+5. pip install setuptools wheel 설치 후 빌드 업 -> 설치판 생성
+    -> 설치1: python -m pip install --upgrade setuptools wheel
+    -> 설치2: python -m pip install --user --upgrade setuptools wheel
+    -> 빌드: python setup.py sdist bdist_wheel
+    
+6. PyPI 배포
+    -> 설치: pip install twine
+    -> 업로드: python -m twine upload dist/*
 
+7. 설치 확인(pip install pygifconvt_test_sejinprk)
+    from pygifconvt_test_sejinprk.converter import GifConverter as Alias
+    
 """
